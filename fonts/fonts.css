@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Aire Exterior';
+    src: url('AireExterior.woff2') format('woff2'),
+         url('AireExterior.woff2') format('ttf'),
+         url('AireExterior.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+

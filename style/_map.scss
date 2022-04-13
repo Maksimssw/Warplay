@@ -1,0 +1,17 @@
+@import '_selector';
+
+.map{
+    margin-top: 400px;
+    .section{
+        justify-content: center;
+    }
+    .title{
+        margin-bottom: 30px;
+    }
+    img{
+        display: block;
+        width: 725px;
+        height: 395px;
+        margin: 0 auto;
+    }
+}

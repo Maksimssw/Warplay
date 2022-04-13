@@ -1,0 +1,87 @@
+@import '_selector';
+@import '_header';
+@import '_info';
+@import '_started';
+@import '_subscriptions';
+@import '_launch';
+@import '_map';
+@import '_footer';
+
+.container{
+    width: 1327px;
+    margin: 0 auto;
+}
+
+body{
+    background-color: $bg;
+    font-family: 'Roboto', sans-serif;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    li{
+        list-style-type: none;
+    }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+button{
+    width: 320px;
+    height: 70px;
+    background-color: $blue;
+    outline: none;
+    border: none;
+}
+
+.section{
+    display: flex;
+    align-items: center;
+    &_border{
+        width: 50px;
+        height: 1px;
+        background-color: #57D6FF;
+        margin-right: 30px;
+    }
+    span{
+        @include font(#57D6FF, 300, 16px, 180%);
+    }
+}
+
+.link{
+    text-decoration: none;
+    position: relative;
+    margin-top: 74px;
+    display: block;
+    @include font($blue, 500, 16px, 18px);
+    &::before{
+        content: '';
+        position: absolute;
+        top: 120%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0%;
+        height: 1px;
+        background: $blue;
+        transition: 0.3s all;
+    }
+    &:hover{
+        &::before{
+            width: 100%;
+        }
+    }
+}
+
+.title{
+    @include font($white, 400, 39px, 39px);
+    font-family: 'Aire Exterior';
+    text-align: center;
+    margin-top: 15px;
+}
+
+
+@import '_media';

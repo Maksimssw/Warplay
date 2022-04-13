@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #141C24;
+}
+
+.container {
+  width: 1327px;
+  margin: 0 auto;
+}
+
+.contacts {
+  width: 100%;
+}
+
+.contacts_wrapper {
+  width: 168px;
+  margin: 0 auto;
+  margin-top: 227px;
+}
+
+.contacts_wrapper h1 {
+  font-family: 'Aire Exterior';
+  margin-bottom: 54px;
+  color: #fff;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 48px;
+  position: relative;
+}
+
+.contacts_wrapper h1 a {
+  width: 14px;
+  height: 24px;
+  background: url("../icon/Arrow.svg") no-repeat center;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: -40px;
+}
+
+.contacts_wrapper_icon {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media screen and (max-width: 1298px) {
+  .container {
+    width: 980px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .container {
+    width: 720px;
+  }
+}
+
+@media screen and (max-width: 757px) {
+  .container {
+    width: 425px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .container {
+    width: 320px;
+  }
+}
+/*# sourceMappingURL=contacts.css.map */

@@ -1,0 +1,51 @@
+@import '_selector';
+
+.footer{
+    margin-top: 86px;
+    background: #171717;
+    padding: 56px 0px;
+    &_wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &_list{
+            display: flex;
+            align-items: center;
+            &_reserved{
+                @include font($white, 400, 12px, 11px);
+                font-family: 'Aire Exterior';
+                margin-left: 29px;
+                margin-right: 20px;
+                text-transform: uppercase;
+            }
+            &_design{
+                @include font(#838383, 400, 12px, 11px);
+                margin-right: 7px;
+                text-transform: uppercase;
+            }
+            &_privacy{
+                @include font($white, 200, 12px, 14px);
+                margin-right: 51px;
+            }
+            &_files{
+                @include font($white, 200, 12px, 14px);
+                margin-right: 51px;
+            }
+            &_icons{
+                width: 71px;
+                display: flex;
+                justify-content: space-between;
+                a{
+                    img{
+                        width: 17px;
+                        height: 17px;
+                    }
+                }
+            }
+            &_contacts{
+                display: none;
+                @include font($white, 200, 12px, 14px);
+            }
+        }
+    }
+}

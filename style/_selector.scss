@@ -1,0 +1,19 @@
+$white: #fff;
+$gray: #ABABAB;
+$blue: #00C5FF;
+$bg: #141C24;
+
+@mixin ellips ($white, $height) {
+    width: $white;
+    height: $height;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.25);
+    filter: blur(200px);
+}
+
+@mixin font($color, $weight, $fontSize, $lineHeight) {
+    color: $color;
+    font-weight: $weight;
+    font-size: $fontSize;
+    line-height: $lineHeight;
+}

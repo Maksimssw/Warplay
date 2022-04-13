@@ -1,0 +1,36 @@
+@import '_selector';
+
+.launch{
+    width: 100%;
+    margin-top: 200px;
+    position: relative;
+    &_text{
+        width: 480px;
+        &_title{
+            @include font($white, 400, 39px, 39px);
+            font-family: 'Aire Exterior';
+            margin-top: 25px;
+            margin-bottom: 90px;
+        }
+        &_module{
+            @include font($gray, 300, 21px, 32px);
+            margin-bottom: 60px;
+        }
+        img{
+            display: none;
+        }
+    }
+    &_ph{
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: -1;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .link{
+        width: 153px;
+    }
+}

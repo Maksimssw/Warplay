@@ -1,0 +1,78 @@
+@import '_selector';
+
+.info{
+    margin-top: 50px;
+    &_wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        &_text{
+            position: relative;
+            width: 480px;
+            &_title{
+                @include font($white, 400, 39px, 39px);
+                margin-top: 17px; 
+                font-family: 'Aire Exterior';   
+                margin-bottom: 60px;
+            }
+            p{
+                @include font($gray, 300, 21px, 150%);
+                box-sizing: border-box;
+            }
+            img{
+                display: none;
+            }
+            hr{
+                width: 271px;
+                height: 1px;
+                background: rgba(255, 255, 255, 0.2);
+                margin: 0;
+                border-width: 0;
+                margin-top: 27px;
+                margin-bottom: 22px;
+            }
+            a{
+                text-decoration: none;
+                position: relative;
+                margin-top: 74px;
+                display: block;
+                width: 76px;
+                @include font($blue, 500, 16px, 18px);
+                &::before{
+                    content: '';
+                    position: absolute;
+                    top: 120%;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    width: 0%;
+                    height: 1px;
+                    background: $blue;
+                    transition: 0.3s all;
+                }
+                &:hover{
+                    &::before{
+                        width: 100%;
+                    }
+                }
+            }
+            &::before{
+                content: '';
+                position: absolute;
+                width: 461px;
+                height: 461px;
+                border-radius: 50%;
+                background: rgba(0, 0, 0, 0.25);
+                filter: blur(200px);
+                z-index: -1;
+                left: -50%;
+                top: 50%;
+            }
+        }
+        &_ph{
+            width: 664px;
+            img{
+                width: 100%;
+            }
+        }
+    }
+}

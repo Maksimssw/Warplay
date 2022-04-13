@@ -1,0 +1,69 @@
+@import '_selector';
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: $bg;
+}
+
+.container{
+    width: 1327px;
+    margin: 0 auto;
+}
+
+
+.contacts{
+    width: 100%;
+    &_wrapper{
+        width: 168px;
+        margin: 0 auto;
+        margin-top: 227px;
+        h1{
+            font-family: 'Aire Exterior';
+            margin-bottom: 54px;
+            @include font($white, 400, 48px, 48px);
+            position: relative;
+            a{
+                width: 14px;
+                height: 24px;
+                background: url('../icon/Arrow.svg') no-repeat center;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                left: -40px;
+            }
+        }
+    }
+}
+
+.contacts_wrapper_icon{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and(max-width: 1298px) {
+    .container{
+        width: 980px;
+    }
+}
+
+@media screen and(max-width: 991px) {
+    .container{
+        width: 720px;
+    }
+}
+
+@media screen and(max-width: 757px) {
+    .container{
+        width: 425px;
+    }
+}
+@media screen and(max-width: 550px) {
+    .container{
+        width: 320px;
+    }
+}

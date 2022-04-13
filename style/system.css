@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #141C24;
+}
+
+.container {
+  width: 1327px;
+  margin: 0 auto;
+}
+
+img {
+  display: block;
+}
+
+.system {
+  margin-top: 314px;
+}
+
+.system_wrapper {
+  width: 600px;
+  margin: 0 auto;
+}
+
+.system_wrapper h1 {
+  color: #fff;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 48px;
+  margin-bottom: 125px;
+  position: relative;
+  font-family: 'Aire Exterior';
+}
+
+.system_wrapper h1 a {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background: url("../icon/Arrow.svg") no-repeat center;
+  left: -71px;
+  width: 14px;
+  height: 24px;
+}
+
+.system_wrapper_icon {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media screen and (max-width: 1298px) {
+  .container {
+    width: 980px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .container {
+    width: 720px;
+  }
+}
+
+@media screen and (max-width: 757px) {
+  .container {
+    width: 425px;
+  }
+  .system_wrapper {
+    width: 493px;
+  }
+  .system_wrapper h1 a {
+    left: -40px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .container {
+    width: 320px;
+  }
+  .system_wrapper {
+    padding: 0 10px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 100%;
+  }
+  .system_wrapper_icon {
+    display: block;
+  }
+  .system_wrapper_icon a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 30px;
+  }
+  .system_wrapper_icon a:last-child {
+    margin-bottom: 0;
+  }
+  .system_wrapper h1 a {
+    top: -20%;
+    left: 0;
+  }
+}
+/*# sourceMappingURL=system.css.map */
